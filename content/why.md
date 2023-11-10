@@ -19,3 +19,17 @@ There are several ways you can support this project:
 3. **Feedback:** Your feedback can help improve this application and its documentation. If you have any suggestions or find any issues, please let us know.
 
 Your support is greatly appreciated and will go a long way in helping this project. Thank you!
+
+## Project Status
+
+This project is currently in the early stages of development. We are still working on the initial version of the application and its documentation.
+
+If you would like to contribute to this project, please see the [Contributing](/contributing) section for more information.
+
+## Meet the Creator
+
+Hey there! We're [AIOcean](https://aiocean.dev), a tech-savvy crew based in Vietnam. Our passion? Building web applications that transform the way people work and live.
+
+We're firm believers in the power of hands-on learning and love diving headfirst into new technologies and methodologies. This application is a perfect example of our "learn by doing" philosophy in action.
+
+Got questions or just want to chat? Don't hesitate to drop us a line at [contact@aiocean.io](mailto:contact@aiocean.io). We'd love to hear from you!
