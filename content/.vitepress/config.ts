@@ -37,6 +37,13 @@ export default defineConfig({
                     {text: "Architecture", link: "/architecture"}
                 ]
             },
+            {
+                text: "Community",
+                items: [
+                    {text: "Contributing", link: "/contributing"},
+                    {text: "Code of Conduct", link: "/code-of-conduct"},
+                ]
+            },
         ],
 
         socialLinks: [
