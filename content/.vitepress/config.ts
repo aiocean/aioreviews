@@ -42,12 +42,14 @@ export default defineConfig({
                 items: [
                     {text: "Contributing", link: "/contributing"},
                     {text: "Code of Conduct", link: "/code-of-conduct"},
+                    {text: "Discord", link: "https://discord.gg/vPJjCrDf"},
+
                 ]
             },
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/aiocean/aioreviews'}
         ]
     }
 })
