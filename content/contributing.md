@@ -12,9 +12,9 @@ We're thrilled that you're interested in contributing to AIO Reviews! Your help 
 6. **Push Changes:** Push your changes.
 7. **Create a Pull Request:** Go to your forked repo on GitHub, select your branch, and create a new pull request.
 
-## Discord Server
+## Communication
 
-Join our Discord server at [Discord Server Link](https://discord.com/invite/your-invite-link) to discuss ideas and ask questions.
+Join our Discord server at [Discord Server Link](https://discord.gg/vPJjCrDf) to discuss ideas and ask questions. Or you can follow us on [Twitter](https://twitter.com/duocdev).
 
 ## Code of Conduct
 
