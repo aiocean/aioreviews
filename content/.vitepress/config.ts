@@ -49,7 +49,9 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/aiocean/aioreviews'}
+            {icon: 'github', link: 'https://github.com/aiocean/aioreviews'},
+            {icon: 'twitter', link: 'https://twitter.com/duocdev'},
+            {icon: 'discord', link: 'https://discord.gg/vPJjCrDf'},
         ]
     }
 })
