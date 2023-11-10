@@ -43,13 +43,13 @@ Here's how it works:
 
 4. **Use Dependencies:** Finally, we can use these dependencies in our code. Instead of directly creating dependencies, our objects will receive them as parameters. This makes our code more flexible and easier to test.
 
-we can make our codebase more maintainable and scalable. It allows us to easily swap out dependencies, which is especially useful in testing environments. Furthermore, it makes our code easier to understand, as the relationships between objects are made explicit through their dependencies.
+It allows us to easily swap out dependencies, which is especially useful in testing environments. Furthermore, it makes our code easier to understand, as the relationships between objects are made explicit through their dependencies.
 
 ### Stateless Service
 
-We will adopt a stateless service approach to enhance scalability. This means that each request will be processed independently of others, without relying on any stored session information.
+Our system will utilize a stateless architecture to improve scalability. In this model, each request is processed individually, without the need for any stored session data.
 
-we can ensure that our system can handle a large number of requests efficiently, as there is no need to maintain and synchronize session information across multiple servers. This makes our system more scalable and easier to manage.
+This approach allows our system to efficiently manage a high volume of requests, as there's no need to maintain and synchronize session data across multiple servers. Consequently, our system becomes more scalable and easier to manage.
 
 ### Event Driven Architecture
 
