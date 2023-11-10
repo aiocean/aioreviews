@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+title: The Ultimate Shopify Reviews App
 hero:
   name: "AIO Reviews"
   text: "The Ultimate Shopify Reviews App"

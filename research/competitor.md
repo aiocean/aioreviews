@@ -1,4 +1,4 @@
-# Product Review Apps Analysis
+# Competitor Analysis
 
 ## Judge.me Product Reviews
 

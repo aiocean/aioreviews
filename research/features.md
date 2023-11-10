@@ -1,4 +1,4 @@
-# New App Feature List
+# Feature Planning
 
 ## Full Features
 
@@ -14,7 +14,7 @@
 - **SEO Support:** Provide more advanced SEO support, such as keyword optimization in reviews.
 - **Responsiveness:** Ensure high responsiveness on any device.
 - **Migration Support:** Provide support in migrating reviews from any other apps.
-
+- **Review Influence on Sales**: Track and analyze the correlation between reviews and sales. For example, you could track changes in sales before and after a review was posted, or compare sales of products with reviews to similar products without reviews.
 ## MVP Features
 
 1. Manage Reviews: Allow users to create, display, and manage reviews. This includes features like review sorting, filtering, searching, and performing actions on reviews such as hide, delete, reply, etc.

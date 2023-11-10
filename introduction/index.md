@@ -1,3 +1,4 @@
+
 # Why This App Exists
 
 This application was created primarily for educational and exploratory purposes. The main goal is to learn and experiment with various technologies, methodologies, and concepts related to building a review management system for Shopify.
