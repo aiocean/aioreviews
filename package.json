@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "vitepress dev content",
-    "build": "vitepress build --base /aioreviews/ content",
+    "build": "vitepress build content",
     "preview": "vitepress preview content"
   }
 }
