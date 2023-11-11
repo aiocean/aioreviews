@@ -1,62 +1,166 @@
-import {DefaultTheme, defineConfig} from 'vitepress'
-import * as fs from "fs";
-import * as path from "path";
-
-// function generate Menu, accept folder path and return array of menu
-function generateMenuItems(folderPath: string): DefaultTheme.SidebarItem[] {
-
-    const files = fs.readdirSync(folderPath);
-
-    // Filter out non-Markdown files and map to menu items
-    return files
-        .filter(file => path.extname(file) === '.md')
-        .map(file => {
-            const name = path.basename(file, '.md');
-            // read the file to get the first h1 as the title
-            const content = fs.readFileSync(`./${folderPath}/${file}`, 'utf8');
-            const title = content.match(/^#\s*(.*)\s*$/m)?.[1] ?? name;
-            return {
-                text: title,
-                link: `/${folderPath}/${name}`
-            };
-        });
-}
-
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
-    title: "AIO Reviews",
-    description: "Shopify reviews app",
-    themeConfig: {
-        search: {
-            provider: 'local'
+export default {
+    "title": "AIO Reviews",
+    "description": "Shopify reviews app",
+    "themeConfig": {
+        "search": {
+            "provider": "local"
         },
-        nav: [
-            {text: 'Introduction', link: '/introduction/'}
+        "nav": [
+            {
+                "text": "Introduction",
+                "link": "/introduction/"
+            }
         ],
-
-        sidebar: [
+        "sidebar": [
             {
-                text: 'Research',
-                items: generateMenuItems('research')
+                "text": "Introduction",
+                "items": [
+                    {
+                        "text": "Why This App Exists",
+                        "link": "/introduction/index"
+                    }
+                ]
             },
             {
-                text: "Features",
-                items: generateMenuItems('features')
+                "text": "Research",
+                "items": [
+                    {
+                        "text": "Competitor Analysis",
+                        "link": "/research/competitor"
+                    },
+                    {
+                        "text": "Feature Planning",
+                        "link": "/research/features"
+                    },
+                    {
+                        "text": "Pricing",
+                        "link": "/research/pricing"
+                    }
+                ]
             },
             {
-                text: "Implementation",
-                items: generateMenuItems('architecture')
+                "text": "Features",
+                "items": [
+                    {
+                        "text": "Collect Reviews",
+                        "link": "/features/collect-reviews"
+                    },
+                    {
+                        "text": "Display Reviews",
+                        "link": "/features/display-reviews"
+                    },
+                    {
+                        "text": "Import Reviews",
+                        "link": "/features/import-reviews"
+                    },
+                    {
+                        "text": "Manage Reviews",
+                        "link": "/features/manage-reviews"
+                    },
+                    {
+                        "text": "Performance Report",
+                        "link": "/features/performance-report"
+                    }
+                ]
             },
             {
-                text: "Community",
-                items: generateMenuItems('community')
+                "text": "Architecture",
+                "items": [
+                    {
+                        "text": "Software Architecture",
+                        "link": "/architecture/architecture"
+                    },
+                    {
+                        "text": "Components",
+                        "link": "/architecture/components"
+                    },
+                    {
+                        "text": "",
+                        "link": "/architecture/database"
+                    }
+                ]
             },
+            {
+                "text": "Implementation",
+                "items": [
+                    {
+                        "text": "Authentication",
+                        "link": "/implementation/01-authentication"
+                    },
+                    {
+                        "text": "Application Bootstrap",
+                        "link": "/implementation/02-bootstrap"
+                    },
+                    {
+                        "text": "Realtime Data",
+                        "link": "/implementation/03-realtime-data"
+                    },
+                    {
+                        "text": "Deploy API Service",
+                        "link": "/implementation/04-deploy-api-service"
+                    },
+                    {
+                        "text": "Deploy Frontend",
+                        "link": "/implementation/05-deploy-frontend"
+                    }
+                ]
+            },
+            {
+                "text": "Publication",
+                "items": [
+                    {
+                        "text": "App Listing",
+                        "link": "/publication/app-listing"
+                    },
+                    {
+                        "text": "Guideline",
+                        "link": "/publication/app-listing-guideline"
+                    },
+                    {
+                        "text": "Change log",
+                        "link": "/publication/change-log"
+                    },
+                    {
+                        "text": "FAQ",
+                        "link": "/publication/faq"
+                    },
+                    {
+                        "text": "Privacy Policy",
+                        "link": "/publication/privacy-policy"
+                    }
+                ]
+            },
+            {
+                "text": "Community",
+                "items": [
+                    {
+                        "text": "Code of Conduct",
+                        "link": "/community/code-of-conduct"
+                    },
+                    {
+                        "text": "Contact",
+                        "link": "/community/contact"
+                    },
+                    {
+                        "text": "Contributing",
+                        "link": "/community/contributing"
+                    }
+                ]
+            }
         ],
-
-        socialLinks: [
-            {icon: 'github', link: 'https://github.com/aiocean/aioreviews'},
-            {icon: 'twitter', link: 'https://twitter.com/duocdev'},
-            {icon: 'discord', link: 'https://discord.gg/vPJjCrDf'},
+        "socialLinks": [
+            {
+                "icon": "github",
+                "link": "https://github.com/aiocean/aioreviews"
+            },
+            {
+                "icon": "twitter",
+                "link": "https://twitter.com/duocdev"
+            },
+            {
+                "icon": "discord",
+                "link": "https://discord.gg/vPJjCrDf"
+            }
         ]
     }
-})
+}

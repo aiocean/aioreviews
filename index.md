@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Explore Competitor Analysis
-      link: /competitor
+      link: /research/competitor
     - theme: alt
       text: Discover Our Features
-      link: /features
+      link: /research/features
 
 features:
     - title: Import Reviews
